@@ -1,0 +1,7 @@
+1. Line 9 prints "values added: 20."
+2. Line 13 prints "final result: 20."
+3. You should not use var because when defined within a function, it defines variables that are only function-scoped. If defined outside a function, it is global scoped. In this specific example, var is accessible anywhere inside the sumValues function. It is possible for var result to be overwritten or improperly used if done improperly.
+4. Although the whole code runs an error, when line 13 is commented out, line 9 prints "values added: 20." The code results in an error because the let declaration only allows the result variable to exist in the if(add) block. In the code, we are trying to access at outside of its scope, so result does not exist outside of the if(add) block.
+5. The code results in an error because the let declaration only allows the result variable to exist in the if(add) block. We get the message "ReferenceError: result is not defined." This is because the let declaration is block-scoped. Since JavaScript does not have access to result at line 13 due to the let declaration, an error is returned.
+6. The code returns an error because variables that are declared as const are constant, so we can never change their values. in line 7, we try to re-wrote result as the sum of num1 and num2, resulting in an error. 
+7. For the same reasoning as number 6,the code returns an error because variables that are declared as const are constant, so we can never change their values. in line 7, we try to re-wrote result as the sum of num1 and num2, resulting in an error. 

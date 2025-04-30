@@ -1,0 +1,2 @@
+1. The bug is that the numbers are treated as strings and instead concatenates numbers together rather than actually summing them up.
+2. Fix by typecasting the inputs to numbers. Included in expand/screenshots/fix.png
